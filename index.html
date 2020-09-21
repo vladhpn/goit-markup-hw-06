@@ -696,11 +696,11 @@
             </li>
           </ul>
         </section>
-        <section>
-          <ul class="social">
-            <h3 class="social-title">подпишитесь на рассылку</h3>
+        <section class="social">
+          <h3 class="social-title">подпишитесь на рассылку</h3>
+          <ul>
             <li>
-              <form action="#">
+              <form action="#" class="submit-form">
                 <label>
                   <input
                     type="email"
@@ -745,7 +745,8 @@
               class="form-field"
               pattern="^[A-Za-zА-Яа-яЁё\s]+$"
               placeholder=" "
-              autocomplete="off"
+              autocomplete="on"
+              required
             />
             <svg class="form-modal-icon">
               <use
@@ -762,7 +763,8 @@
               name="user-tel"
               class="form-field"
               pattern="[0-9]{10,12}"
-              autocomplete="off"
+              autocomplete="on"
+              required
             />
             <svg class="form-modal-icon">
               <use
@@ -778,7 +780,8 @@
               type="email"
               name="user-email"
               class="form-field"
-              autocomplete="off"
+              autocomplete="on"
+              required
             />
             <svg class="form-modal-icon">
               <use

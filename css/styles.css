@@ -245,7 +245,7 @@ svg {
 }
 
 .button {
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   margin-bottom: 200px;
   padding: 10px 32px;
@@ -621,6 +621,11 @@ svg {
 .social-link:not(:last-child) {
   margin-right: 10px;
 }
+
+.submit-form {
+  display: flex;
+}
+
 .submit-input {
   width: 358px;
   height: 50px;
@@ -635,7 +640,8 @@ svg {
 }
 
 .button-text {
-  /* font-weight: 700px; */
+  margin-right: 10px;
+  font-weight: 700px;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
@@ -652,16 +658,6 @@ svg {
   height: 24px;
 }
 
-/* .button-text:after {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/icon-send.svg);
-} */
 /* Portfolio */
 
 /* Список работ - кнопка */
@@ -876,6 +872,7 @@ svg {
   box-sizing: border-box;
   border-radius: 4px;
   padding: 12px 42px;
+  transition: transform 250ms var(--timing-function);
 }
 
 .form-field:focus {
@@ -905,6 +902,7 @@ svg {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  transition: transform 250ms var(--timing-function);
 }
 
 .form-field-comment:focus {
